@@ -23,7 +23,7 @@ export const MainNav = [
 	},
 	{
 		text: "前端进阶",
-		link: "/deep/dep",
+		link: "/deep/index",
 		activeMatch: "/deep/",
 	},
 	{ text: "项目分析", link: "/project/prj", activeMatch: "/project/" },

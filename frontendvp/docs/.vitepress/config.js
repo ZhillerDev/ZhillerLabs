@@ -1,4 +1,5 @@
 import { BasicMenu } from "./menu/basic-menu";
+import { DeepMenu } from "./menu/deep-menu";
 import { InterviewMenu } from "./menu/interview-menu";
 import { MainNav } from "./menu/main-nav";
 
@@ -35,6 +36,7 @@ export default {
 		// 侧边栏抽离
 		sidebar: {
 			"/basic/": BasicMenu,
+			"/deep/": DeepMenu,
 			"/interview/": InterviewMenu,
 		},
 	},
