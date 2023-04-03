@@ -2,18 +2,21 @@
 layout: home
 
 hero:
-  name: FunnyTest
-  text: Test and development hodgepodge
-  tagline: 测试开发复习
+  name: FunnyFrontend
+  text: free for frontend learning
+  tagline: 前端开发杂项与复习
   image:
     src: /icons/car.svg
-    alt: VitePress
+    alt: FunnyFrontend
   actions:
     - theme: brand
-      text: 快速上手
+      text: 开始学习！
       link: /starter/starter-install
     - theme: alt
-      text: 查看Github源码
+      text: Js专项
+      link: https://github.com/vuejs/vitepress
+    - theme: alt
+      text: 项目分析
       link: https://github.com/vuejs/vitepress
 
 features:
