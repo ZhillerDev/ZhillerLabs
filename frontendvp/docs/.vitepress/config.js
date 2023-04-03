@@ -6,7 +6,7 @@ export default {
 		outlineBadges: true,
 		outlineTitle: "目录",
 		lang: "zh-CN",
-		logo: "/icons/car.svg",
+		logo: "/icons/index.svg",
 		siteTitle: "ZerFrontend",
 		lastUpdated: true,
 		nav: [
@@ -16,22 +16,36 @@ export default {
 			},
 			{
 				text: "快速开始",
-				link: "/basic/html/h1",
+				items: [
+					{
+						text: "HTML",
+						link: "/basic/html/h1",
+					},
+					{
+						text: "CSS",
+						link: "/basic/css/c1-svg",
+					},
+					{
+						text: "Javascript",
+						link: "/basic/js/j1",
+					},
+				],
 				activeMatch: "/basic/",
 			},
-			{ text: "前端进阶", link: "/" },
-			{ text: "项目分析", link: "/" },
+			{
+				text: "前端进阶",
+				link: "/deep/dep",
+				activeMatch: "/deep/",
+			},
+			{ text: "项目分析", link: "/project/prj", activeMatch: "/project/" },
 		],
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/vuejs/vitepress" },
+			{ icon: "github", link: "https://github.com/zhiyiyi" },
+			{ icon: "discord", link: "https://discord.gg/Qs4Mtr23QG" },
 		],
 		footer: {
 			message: "Released under the undefined License.",
 			copyright: "Copyright © 2023-present Zhiller",
-		},
-		editLink: {
-			pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-			text: "在Github中编辑此页面",
 		},
 		algolia: {
 			appId: "R2IYF7ETH7",
@@ -47,7 +61,21 @@ export default {
 				{
 					text: "HTML",
 					collapsed: true,
-					items: [{ text: "标签介绍", link: "/basic/html/h1" }],
+					items: [
+						{ text: "HTML快速入门", link: "/basic/html/h1" },
+						{
+							text: "HTTP协议及详解",
+							link: "/basic/html/h2",
+						},
+					],
+				},
+				{
+					text: "CSS",
+					collapsed: true,
+					items: [
+						{ text: "SVG详解", link: "/basic/css/c1-svg" },
+						{ text: "WebGL原理与基础案例", link: "/basic/css/c2-webgl" },
+					],
 				},
 				{
 					text: "Javascript",

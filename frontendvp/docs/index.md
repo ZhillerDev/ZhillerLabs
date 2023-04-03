@@ -6,27 +6,27 @@ hero:
   text: free for frontend learning
   tagline: 前端开发杂项与复习
   image:
-    src: /icons/car.svg
+    src: /icons/index.svg
     alt: ZerFrontend
   actions:
     - theme: brand
       text: 开始学习！
-      link: /starter/starter-install
+      link: /basic/html/h1
     - theme: alt
       text: Js专项
-      link: https://github.com/vuejs/vitepress
+      link: /basic/js/j1
     - theme: alt
       text: 项目分析
-      link: https://github.com/vuejs/vitepress
+      link: /project/prj
 
 features:
   - icon: 🌭
-    title: 快速且便捷
-    details: 仅需简单注册便可快速领略多人协作笔记系统的高效性
+    title: 基础知识
+    details: HTML+CSS+Javascript主要知识点一网打尽，并附有详细使用过程分析与对应案例解释
   - icon: 🎁
-    title: 永久免费
-    details: 无需破费即可体验平台完整功能
+    title: 深度进阶
+    details: Webpack+Node等待其余常用包与框架知识点分析；部分源码解析笔记
   - icon: 🥇
-    title: 技术支持
-    details: github 10000k+ starts 保证
+    title: 项目开发
+    details: 找不到优秀的项目提升个人能力？项目到手却不知如何开始？这里将持续收集目前最新小项目并对其分析，供各位快速学习与参考
 ---
