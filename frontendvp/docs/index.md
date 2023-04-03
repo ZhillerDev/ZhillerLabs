@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: FunnyFrontend
+  name: ZerFrontend
   text: free for frontend learning
   tagline: 前端开发杂项与复习
   image:
     src: /icons/car.svg
-    alt: FunnyFrontend
+    alt: ZerFrontend
   actions:
     - theme: brand
       text: 开始学习！
