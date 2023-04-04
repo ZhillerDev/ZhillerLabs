@@ -22,10 +22,10 @@ export const MainNav = [
 		activeMatch: "/basic/",
 	},
 	{
-		text: "前端进阶",
+		text: "进阶",
 		link: "/deep/index",
 		activeMatch: "/deep/",
 	},
-	{ text: "项目分析", link: "/project/prj", activeMatch: "/project/" },
 	{ text: "面试", link: "/interview/index", activeMatch: "/interview/" },
+	{ text: "React", link: "/react/index", activeMatch: "/react/" },
 ];

@@ -2,6 +2,7 @@ import { BasicMenu } from "./menu/basic-menu";
 import { DeepMenu } from "./menu/deep-menu";
 import { InterviewMenu } from "./menu/interview-menu";
 import { MainNav } from "./menu/main-nav";
+import { ReactMenu } from "./menu/react-menu";
 
 export default {
 	title: "ZerFe",
@@ -38,6 +39,7 @@ export default {
 			"/basic/": BasicMenu,
 			"/deep/": DeepMenu,
 			"/interview/": InterviewMenu,
+			"/react/": ReactMenu,
 		},
 	},
 	cleanUrls: true,
