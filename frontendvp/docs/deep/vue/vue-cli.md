@@ -669,15 +669,15 @@ module.exports = {
 （TIPS：以下配置参数中 target 不可或缺，其他的可有可无）
 
 > **请求过程**  
-> 发送方以设置好的请求头（/api）发送到代理服务器，代理服务器又转发到接收方（http://localhost:5000）
+> 发送方以设置好的请求头（/api）发送到代理服务器，代理服务器又转发到接收方（`http://localhost:5000`）
 
-> **'/api'** 设置请求头，当我们使用 axios 的 get 方法请求 http://localhost:8080/home 时，实际上是请求 http://localhost:8080/api/home
+> **'/api'** 设置请求头，当我们使用 axios 的 get 方法请求 `http://localhost:8080/hom`e 时，实际上是请求 `http://localhost:8080/api/home`
 
 > **target** 设置目的主机的地址和端口号
 
 > **pathRewrite** 使用对象格式书写，里面包含一个键值对，表示当代理服务器请求目标主机时，需要对请求 URL 做出对修改；键值对中 key 为查找的对象（使用正则匹配），value 为欲替换成的内容；  
 > 代码中的意思是将 URL 中的 /api 字段全部删除（即替换为空）；  
-> 因为我们请求目标主机 URL 应当是 http://localhost:5000/home 而不是 http://localhost:5000/api/home ，这样做才可以做到正确的请求文件
+> 因为我们请求目标主机 URL 应当是 `http://localhost:5000/home` 而不是 `http://localhost:5000/api/home` ，这样做才可以做到正确的请求文件
 
 > **ws** 是否开启 websocket
 
