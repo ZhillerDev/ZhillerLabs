@@ -4,28 +4,53 @@ export const MainNav = [
 		link: "/",
 	},
 	{
-		text: "快速开始",
-		items: [
-			{
-				text: "HTML",
-				link: "/basic/html/h1",
-			},
-			{
-				text: "CSS",
-				link: "/basic/css/c1-svg",
-			},
-			{
-				text: "Javascript",
-				link: "/basic/js/j1",
-			},
-		],
-		activeMatch: "/basic/",
+		text: "电路基础",
+		link: "/circuit/serial",
+		activeMatch: "/circuit/",
 	},
 	{
-		text: "进阶",
-		link: "/deep/index",
-		activeMatch: "/deep/",
+		text: "C/C++",
+		items: [
+			{
+				text: "Cpp",
+				link: "/cpp/cp/data-struct1",
+			},
+			{
+				text: "C指针",
+				link: "/cpp/cp/data-struct1",
+			},
+		],
+		activeMatch: "/cpp/",
 	},
-	{ text: "面试", link: "/interview/index", activeMatch: "/interview/" },
-	{ text: "React", link: "/react/index", activeMatch: "/react/" },
+	{
+		text: "硬件",
+		items: [
+			{
+				text: "C51单片机",
+				link: "/hardware/c51/c51main",
+			},
+			{
+				text: "STM32",
+				link: "/hardware/stm32/stm32main",
+			},
+			{
+				text: "ESP32",
+				link: "/hardware/esp32/esp32main",
+			},
+			{
+				text: "FreeRTOS",
+				link: "/hardware/freertos/freemain",
+			},
+			{
+				text: "RT-Thread",
+				link: "/hardware/rtthead/rtmain",
+			},
+			{
+				text: "FPGA",
+				link: "/hardware/fpga/fpgamain",
+			},
+		],
+		activeMatch: "/hardware/",
+	},
+	{ text: "Linux", link: "/interview/index", activeMatch: "/interview/" },
 ];

@@ -1,8 +1,11 @@
 import { BasicMenu } from "./menu/basic-menu";
-import { DeepMenu } from "./menu/deep-menu";
-import { InterviewMenu } from "./menu/interview-menu";
 import { MainNav } from "./menu/main-nav";
-import { ReactMenu } from "./menu/react-menu";
+
+import { C51Menu } from "./menu/hw/c51-menu";
+import { ESP32Menu } from "./menu/hw/esp32-menu";
+import { STM32Menu } from "./menu/hw/stm32-menu";
+import { CPPMenu } from "./menu/cpp-menu";
+import { CircuitMenu } from "./menu/circuit.menu";
 
 export default {
 	title: "嵌入式小站",
@@ -36,10 +39,11 @@ export default {
 
 		// 侧边栏抽离
 		sidebar: {
-			"/basic/": BasicMenu,
-			"/deep/": DeepMenu,
-			"/interview/": InterviewMenu,
-			"/react/": ReactMenu,
+			"/cpp/": CPPMenu,
+			"/circuit/": CircuitMenu,
+			"/hardware/c51/": C51Menu,
+			"/hardware/stm32/": STM32Menu,
+			"/hardware/esp32/": ESP32Menu,
 		},
 	},
 	cleanUrls: true,
