@@ -7,17 +7,17 @@ hero:
   tagline: 嵌入式开发学习笔记记录小站，软件or硬件任你选择
   image:
     src: /icons/index.svg
-    alt: ZerFrontend
+    alt: ZerEmbedded
   actions:
     - theme: brand
       text: C/C++
-      link: /basic/html/h1
+      link: /cpp/cp/data-struct1
     - theme: alt
       text: C51
-      link: /basic/js/j1
+      link: /hardware/c51/c51main
     - theme: alt
       text: STM32
-      link: /project/prj
+      link: /hardware/stm32/stm32main
 
 features:
   - icon: ⚔
