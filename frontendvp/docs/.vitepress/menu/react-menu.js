@@ -13,6 +13,14 @@ export const ReactMenu = [
 	{
 		text: "容器管理",
 		collapsed: true,
-		items: [{ text: "Mobx初探", link: "/react/mobx/mb1" }],
+		items: [
+			{ text: "Mobx初探", link: "/react/mobx/mb1" },
+			{ text: "Mobx核心概念", link: "/react/mobx/mb2" },
+		],
+	},
+	{
+		text: "界面设计",
+		collapsed: true,
+		items: [{ text: "TailwindCSS常用类", link: "/react/ui/tailwind1" }],
 	},
 ];
