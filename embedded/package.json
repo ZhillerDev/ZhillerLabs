@@ -16,6 +16,7 @@
 		"vue": "^3.2.47"
 	},
 	"dependencies": {
-		"@docsearch/js": "^3.3.3"
+		"@docsearch/js": "^3.3.3",
+		"@vercel/analytics": "^1.0.0"
 	}
 }

@@ -5,7 +5,7 @@ import { MainNav } from "./menu/main-nav";
 import { ReactMenu } from "./menu/react-menu";
 
 export default {
-	title: "ZerFe",
+	title: "嵌入式小站",
 	themeConfig: {
 		aside: true,
 		outline: "deep",
@@ -13,7 +13,7 @@ export default {
 		outlineTitle: "目录",
 		lang: "zh-CN",
 		logo: "/icons/index.svg",
-		siteTitle: "ZerFrontend",
+		siteTitle: "ZerEmbedded",
 		lastUpdated: true,
 		nav: MainNav, // 导航抽离
 		socialLinks: [
