@@ -1,7 +1,25 @@
 export const CPPMenu = [
 	{
-		text: "C++Primer总结笔记",
+		text: "C",
 		collapsed: true,
+		items: [
+			{
+				text: "C基础语法",
+				link: "/cpp/c/c1",
+			},
+			{
+				text: "C进阶语法",
+				link: "/cpp/c/c2",
+			},
+			{
+				text: "C结构体与预处理器",
+				link: "/cpp/c/c3",
+			},
+		],
+	},
+	{
+		text: "C++Primer总结笔记",
+		collapsed: false,
 		items: [
 			{ text: "数据结构1", link: "/cpp/cp/data-struct1" },
 			{
