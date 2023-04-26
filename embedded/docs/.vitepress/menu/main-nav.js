@@ -52,5 +52,14 @@ export const MainNav = [
 		],
 		activeMatch: "/hardware/",
 	},
-	{ text: "Linux", link: "/interview/index", activeMatch: "/interview/" },
+	{
+		text: "Linux",
+		items: [
+			{
+				text: "阅读笔记",
+				link: "/linux/book/linuxc",
+			},
+		],
+		activeMatch: "/interview/",
+	},
 ];

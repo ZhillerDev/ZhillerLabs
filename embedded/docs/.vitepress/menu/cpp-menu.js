@@ -1,7 +1,7 @@
 export const CPPMenu = [
 	{
 		text: "C",
-		collapsed: true,
+		collapsed: false,
 		items: [
 			{
 				text: "C基础语法",

@@ -12,12 +12,12 @@ hero:
     - theme: brand
       text: C/C++
       link: /cpp/cp/data-struct1
+    - theme: brand
+      text: Linux
+      link: /linux/book/linuxc
     - theme: alt
       text: C51
       link: /hardware/c51/c51main
-    - theme: alt
-      text: STM32
-      link: /hardware/stm32/stm32main
 
 features:
   - icon: ⚔
