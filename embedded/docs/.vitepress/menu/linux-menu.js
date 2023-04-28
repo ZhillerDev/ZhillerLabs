@@ -9,4 +9,12 @@ export const LinuxMenu = [
 			{ text: "Vim快速上手", link: "/linux/book/vim" },
 		],
 	},
+	{
+		text: "Docker",
+		collapsed: true,
+		items: [
+			{ text: "Docker基础入门", link: "/linux/docker/basic" },
+			{ text: "Docker面试题", link: "/linux/docker/interview" },
+		],
+	},
 ];
