@@ -59,7 +59,25 @@ export const MainNav = [
 				text: "阅读笔记",
 				link: "/linux/book/linuxc",
 			},
+			{
+				text: "Docker",
+				link: "/linux/docker/basic",
+			},
 		],
-		activeMatch: "/interview/",
+		activeMatch: "/linux/",
+	},
+	{
+		text: "测开",
+		items: [
+			{
+				text: "测开笔记",
+				link: "/testdev/note/softtest",
+			},
+			{
+				text: "框架分析",
+				link: "/testdev/note/softtest",
+			},
+		],
+		activeMatch: "/testdev/",
 	},
 ];

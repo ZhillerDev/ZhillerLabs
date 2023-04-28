@@ -6,6 +6,8 @@ import { STM32Menu } from "./menu/hw/stm32-menu";
 import { CPPMenu } from "./menu/cpp-menu";
 import { CircuitMenu } from "./menu/circuit.menu";
 import { LinuxMenu } from "./menu/linux-menu";
+import { TDetailMenu } from "./menu/td/t-detail-menu";
+import { TFrameworkMenu } from "./menu/td/t-framework-menu";
 
 export default {
 	title: "嵌入式小站",
@@ -45,6 +47,8 @@ export default {
 			"/hardware/stm32/": STM32Menu,
 			"/hardware/esp32/": ESP32Menu,
 			"/linux/": LinuxMenu,
+			"/testdev/note/": TDetailMenu,
+			"/testdev/framework/": TFrameworkMenu,
 		},
 	},
 	cleanUrls: true,
