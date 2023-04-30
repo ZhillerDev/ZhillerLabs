@@ -1,7 +1,11 @@
 export const TFrameworkMenu = [
 	{
-		text: "8051基础",
+		text: "Docker",
 		collapsed: true,
-		items: [{ text: "一天掌握MCS51单片机", link: "/hardware/c51/one-day-c51" }],
+		items: [
+			{ text: "Docker常用指令GPT", link: "/testdev/framework/docker/iv" },
+			{ text: "Docker面试题", link: "/testdev/framework/docker/codegpt" },
+			{ text: "Docker速通", link: "/testdev/framework/docker/basic" },
+		],
 	},
 ];

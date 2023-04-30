@@ -75,7 +75,7 @@ export const MainNav = [
 			},
 			{
 				text: "框架分析",
-				link: "/testdev/note/softtest",
+				link: "/testdev/framework/docker/basic",
 			},
 		],
 		activeMatch: "/testdev/",
