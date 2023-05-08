@@ -31,7 +31,7 @@ export const MainNav = [
 			},
 			{
 				text: "STM32",
-				link: "/hardware/stm32/stm32main",
+				link: "/hardware/stm32/stm-tech",
 			},
 			{
 				text: "ESP32",
