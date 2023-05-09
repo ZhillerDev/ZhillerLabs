@@ -19,6 +19,10 @@ export const MainNav = [
 				text: "C指针",
 				link: "/cpp/cp/data-struct1",
 			},
+			{
+				text: "C面试题",
+				link: "/cpp/cinterview/basic-interview",
+			},
 		],
 		activeMatch: "/cpp/",
 	},

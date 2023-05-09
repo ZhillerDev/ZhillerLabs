@@ -44,4 +44,18 @@ export const CPPMenu = [
 			},
 		],
 	},
+	{
+		text: "C面试题",
+		collapsed: false,
+		items: [
+			{
+				text: "GPT基础面试题",
+				link: "/cpp/cinterview/basic-interview",
+			},
+			{
+				text: "深入高级部分",
+				link: "/cpp/cinterview/senior-interview",
+			},
+		],
+	},
 ];
