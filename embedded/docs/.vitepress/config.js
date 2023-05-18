@@ -4,7 +4,7 @@ import { C51Menu } from "./menu/hw/c51-menu";
 import { ESP32Menu } from "./menu/hw/esp32-menu";
 import { STM32Menu } from "./menu/hw/stm32-menu";
 import { CPPMenu } from "./menu/cpp-menu";
-import { CircuitMenu } from "./menu/circuit.menu";
+import { CircuitMenu } from "./menu/circuit-menu";
 import { LinuxMenu } from "./menu/linux-menu";
 import { TDetailMenu } from "./menu/td/t-detail-menu";
 import { TFrameworkMenu } from "./menu/td/t-framework-menu";

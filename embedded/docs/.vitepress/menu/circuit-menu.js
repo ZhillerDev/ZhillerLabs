@@ -12,4 +12,12 @@ export const CircuitMenu = [
 			{ text: "嵌入式C语言自我修养", link: "/circuit/embedc" },
 		],
 	},
+	{
+		text: "PCB",
+		collapsed: false,
+		items: [
+			{ text: "PCB基础知识", link: "/circuit/lc-pcb" },
+			{ text: "立创EDA标准版速成", link: "/circuit/lc-std" },
+		],
+	},
 ];

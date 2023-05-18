@@ -30,7 +30,7 @@ export const MainNav = [
 		text: "硬件",
 		items: [
 			{
-				text: "C51单片机",
+				text: "8051",
 				link: "/hardware/c51/c51main",
 			},
 			{
@@ -46,8 +46,8 @@ export const MainNav = [
 				link: "/hardware/freertos/freemain",
 			},
 			{
-				text: "RT-Thread",
-				link: "/hardware/rtthead/rtmain",
+				text: "μC/OS",
+				link: "/hardware/ucos/ucos-main",
 			},
 			{
 				text: "FPGA",
