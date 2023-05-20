@@ -4,9 +4,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"blk-200": "#082032",
-				"blk-150": "#2C394B",
-				"blk-100": "#334756",
+				"blk-200": "#393E46",
+				"blk-150": "#929AAB",
+				"blk-100": "#EEEEEE",
 				"blk-50": "#959BA6",
 				"blu-1": "#00ADB5",
 			},
