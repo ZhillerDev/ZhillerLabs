@@ -6,10 +6,24 @@ import { makeAutoObservable } from "mobx";
 const navStore = () => {
 	return makeAutoObservable({
 		count: 100,
-		navBarMenu: {
+		topBarMenu: {
 			title: "Zhiller简单导航页",
 			settings: "额外设置",
 		},
+		navList: [
+			{
+				labelName: "嵌入式",
+				tagName: "embeded",
+			},
+			{
+				labelName: "AI",
+				tagName: "ai",
+			},
+			{
+				labelName: "校招",
+				tagName: "work",
+			},
+		],
 	});
 };
 
