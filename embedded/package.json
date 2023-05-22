@@ -12,11 +12,13 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"markdown-it-mathjax3": "^4.3.2",
 		"vitepress": "^1.0.0-alpha.64",
 		"vue": "^3.2.47"
 	},
 	"dependencies": {
 		"@docsearch/js": "^3.3.3",
-		"@vercel/analytics": "^1.0.0"
+		"@vercel/analytics": "^1.0.0",
+		"markdown-it-katex": "^2.0.3"
 	}
 }

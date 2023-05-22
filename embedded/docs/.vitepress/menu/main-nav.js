@@ -4,12 +4,17 @@ export const MainNav = [
 		link: "/",
 	},
 	{
-		text: "电路基础",
+		text: "计算机通识",
+		link: "/cs/cs-main",
+		activeMatch: "/cs/",
+	},
+	{
+		text: "电路",
 		link: "/circuit/serial",
 		activeMatch: "/circuit/",
 	},
 	{
-		text: "C/C++",
+		text: "C",
 		items: [
 			{
 				text: "Cpp",

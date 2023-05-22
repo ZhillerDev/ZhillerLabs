@@ -1,5 +1,6 @@
-import { MainNav } from "./menu/main-nav";
+import { defineConfig } from "vitepress";
 
+import { MainNav } from "./menu/main-nav";
 import { C51Menu } from "./menu/hw/c51-menu";
 import { ESP32Menu } from "./menu/hw/esp32-menu";
 import { STM32Menu } from "./menu/hw/stm32-menu";
@@ -9,7 +10,112 @@ import { LinuxMenu } from "./menu/linux-menu";
 import { TDetailMenu } from "./menu/td/t-detail-menu";
 import { TFrameworkMenu } from "./menu/td/t-framework-menu";
 
+import mathjax3 from "markdown-it-mathjax3";
+import { CSMenu } from "./menu/cs-menu";
+
+const customElements = [
+	"math",
+	"maction",
+	"maligngroup",
+	"malignmark",
+	"menclose",
+	"merror",
+	"mfenced",
+	"mfrac",
+	"mi",
+	"mlongdiv",
+	"mmultiscripts",
+	"mn",
+	"mo",
+	"mover",
+	"mpadded",
+	"mphantom",
+	"mroot",
+	"mrow",
+	"ms",
+	"mscarries",
+	"mscarry",
+	"mscarries",
+	"msgroup",
+	"mstack",
+	"mlongdiv",
+	"msline",
+	"mstack",
+	"mspace",
+	"msqrt",
+	"msrow",
+	"mstack",
+	"mstack",
+	"mstyle",
+	"msub",
+	"msup",
+	"msubsup",
+	"mtable",
+	"mtd",
+	"mtext",
+	"mtr",
+	"munder",
+	"munderover",
+	"semantics",
+	"math",
+	"mi",
+	"mn",
+	"mo",
+	"ms",
+	"mspace",
+	"mtext",
+	"menclose",
+	"merror",
+	"mfenced",
+	"mfrac",
+	"mpadded",
+	"mphantom",
+	"mroot",
+	"mrow",
+	"msqrt",
+	"mstyle",
+	"mmultiscripts",
+	"mover",
+	"mprescripts",
+	"msub",
+	"msubsup",
+	"msup",
+	"munder",
+	"munderover",
+	"none",
+	"maligngroup",
+	"malignmark",
+	"mtable",
+	"mtd",
+	"mtr",
+	"mlongdiv",
+	"mscarries",
+	"mscarry",
+	"msgroup",
+	"msline",
+	"msrow",
+	"mstack",
+	"maction",
+	"semantics",
+	"annotation",
+	"annotation-xml",
+	"mjx-container",
+	"mjx-assistive-mml",
+];
+
 export default {
+	markdown: {
+		config: (md) => {
+			md.use(mathjax3);
+		},
+	},
+	vue: {
+		template: {
+			compilerOptions: {
+				isCustomElement: (tag) => customElements.includes(tag),
+			},
+		},
+	},
 	title: "嵌入式小站",
 	themeConfig: {
 		aside: true,
@@ -49,6 +155,7 @@ export default {
 			"/linux/": LinuxMenu,
 			"/testdev/note/": TDetailMenu,
 			"/testdev/framework/": TFrameworkMenu,
+			"/cs/": CSMenu,
 		},
 	},
 	cleanUrls: true,
