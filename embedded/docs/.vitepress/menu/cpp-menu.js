@@ -1,7 +1,7 @@
 export const CPPMenu = [
 	{
 		text: "C",
-		collapsed: false,
+		collapsed: true,
 		items: [
 			{
 				text: "C基础语法",
@@ -19,7 +19,7 @@ export const CPPMenu = [
 	},
 	{
 		text: "C++Primer总结笔记",
-		collapsed: false,
+		collapsed: true,
 		items: [
 			{ text: "数据结构1", link: "/cpp/cp/data-struct1" },
 			{
@@ -45,8 +45,22 @@ export const CPPMenu = [
 		],
 	},
 	{
+		text: "STL",
+		collapsed: true,
+		items: [
+			{
+				text: "容器Container",
+				link: "/cpp/stl/container",
+			},
+			{
+				text: "迭代器Iterator",
+				link: "/cpp/stl/container",
+			},
+		],
+	},
+	{
 		text: "C面试题",
-		collapsed: false,
+		collapsed: true,
 		items: [
 			{
 				text: "GPT基础面试题",
