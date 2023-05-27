@@ -9,4 +9,17 @@ export const CSMenu = [
 			{ text: "汇编语言", link: "/cs/assembler" },
 		],
 	},
+	{
+		text: "数电模电",
+		collapsed: false,
+		items: [
+			{ text: "数字电子技术", link: "/cs/digital" },
+			{ text: "模拟电子技术", link: "/cs/analog" },
+		],
+	},
+	{
+		text: "AI",
+		collapsed: true,
+		items: [{ text: "ChatGPT提示工程", link: "/cs/chatgpt-prompt" }],
+	},
 ];

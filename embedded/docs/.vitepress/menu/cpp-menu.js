@@ -54,7 +54,11 @@ export const CPPMenu = [
 			},
 			{
 				text: "迭代器Iterator",
-				link: "/cpp/stl/container",
+				link: "/cpp/stl/iterator",
+			},
+			{
+				text: "算法Algorithm",
+				link: "/cpp/stl/algorithm",
 			},
 		],
 	},
