@@ -68,6 +68,10 @@ export const MainNav = [
 				text: "Docker",
 				link: "/linux/docker/basic",
 			},
+			{
+				text: "Qt",
+				link: "/linux/qt/qt-basic",
+			},
 		],
 		activeMatch: "/linux/",
 	},

@@ -10,9 +10,12 @@ export const LinuxMenu = [
 		],
 	},
 	{
-		text: "驱动开发",
+		text: "Qt",
 		collapsed: true,
-		items: [],
+		items: [
+			{ text: "Qt6基础知识", link: "/linux/qt/qt-basic" },
+			{ text: "Qt6简单小案例", link: "/linux/qt/qt-exmp" },
+		],
 	},
 	{
 		text: "Docker",
