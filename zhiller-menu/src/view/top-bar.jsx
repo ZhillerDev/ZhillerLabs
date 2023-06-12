@@ -1,8 +1,9 @@
 import { observer } from "mobx-react-lite";
 import { useStore } from "../store";
+import { action } from "mobx";
 
 const TopBar = observer(() => {
-	const { navStore } = useStore();
+	const { navStore, websiteStore } = useStore();
 	return (
 		<nav className="bg-blk-200 text-gray-600 flex justify-between items-center px-6 py-3">
 			<div className="flex items-center">

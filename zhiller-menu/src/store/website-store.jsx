@@ -16,12 +16,30 @@ const websiteStore = () => {
 				url: "https://oshwhub.com/",
 			},
 			{
+				title: "硬创社",
+				url: "https://x.jlc.com/",
+			},
+			{
 				title: "CSDN",
 				url: "https://www.csdn.net/",
 			},
 			{
 				title: "半岛小芯",
 				url: "http://www.semiee.com/",
+			},
+			{
+				title: "Blynk",
+				url: "https://blynk.io/",
+			},
+		],
+		linux: [
+			{
+				title: "Qt官方文档",
+				url: "https://doc.qt.io/",
+			},
+			{
+				title: "QmlBook",
+				url: "https://qmlbook.github.io/",
 			},
 		],
 		ai: [
@@ -30,12 +48,28 @@ const websiteStore = () => {
 				url: "https://www.google.com/index.html",
 			},
 			{
-				title: "ChatGPT官网",
+				title: "ChatGPT",
 				url: "https://chat.openai.com/auth/login",
 			},
 			{
 				title: "Poe",
 				url: "https://poe.com/",
+			},
+			{
+				title: "Youtube",
+				url: "https://www.youtube.com/",
+			},
+			{
+				title: "Github",
+				url: "https://github.com/",
+			},
+			{
+				title: "微信读书",
+				url: "https://weread.qq.com/",
+			},
+			{
+				title: "哔哩哔哩",
+				url: "https://www.bilibili.com/",
 			},
 		],
 		work: [
