@@ -69,6 +69,10 @@ export const MainNav = [
 				link: "/linux/docker/basic",
 			},
 			{
+				text: "Multimedia",
+				link: "/linux/multimedia/media-basic",
+			},
+			{
 				text: "Qt",
 				link: "/linux/qt/qt-basic",
 			},

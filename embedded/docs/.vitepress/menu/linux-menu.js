@@ -15,7 +15,14 @@ export const LinuxMenu = [
 		items: [
 			{ text: "Qt6基础知识", link: "/linux/qt/qt-basic" },
 			{ text: "Qt6简单小案例", link: "/linux/qt/qt-exmp" },
+			{ text: "Qt6多媒体", link: "/linux/qt/qt-multimedia" },
+			{ text: "QML快速上手", link: "/linux/qt/qml-basic" },
 		],
+	},
+	{
+		text: "MultiMedia",
+		collapsed: true,
+		items: [{ text: "音视频基础知识", link: "/linux/multimedia/media-basic" }],
 	},
 	{
 		text: "Docker",
