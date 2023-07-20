@@ -13,6 +13,7 @@ import { RTOSMenu } from "./menu/hw/rtos-menu";
 
 import mathjax3 from "markdown-it-mathjax3";
 import { CSMenu } from "./menu/cs-menu";
+import { OtherMenu } from "./menu/other-menu";
 
 const customElements = [
 	"math",
@@ -158,6 +159,7 @@ export default {
 			"/testdev/note/": TDetailMenu,
 			"/testdev/framework/": TFrameworkMenu,
 			"/cs/": CSMenu,
+			"/other/": OtherMenu,
 		},
 	},
 	cleanUrls: true,

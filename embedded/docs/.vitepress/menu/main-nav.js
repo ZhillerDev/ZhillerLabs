@@ -85,4 +85,14 @@ export const MainNav = [
 		],
 		activeMatch: "/testdev/",
 	},
+	{
+		text: "其他技术",
+		items: [
+			{
+				text: "GODOT",
+				link: "/other/godot/godot-basic",
+			},
+		],
+		activeMatch: "/other/",
+	},
 ];
