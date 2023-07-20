@@ -43,16 +43,8 @@ export const MainNav = [
 				link: "/hardware/esp32/esp32main",
 			},
 			{
-				text: "FreeRTOS",
-				link: "/hardware/freertos/freemain",
-			},
-			{
-				text: "μC/OS",
-				link: "/hardware/ucos/ucos-main",
-			},
-			{
-				text: "FPGA",
-				link: "/hardware/fpga/fpgamain",
+				text: "RTOS",
+				link: "/hardware/rtos/rtosmain",
 			},
 		],
 		activeMatch: "/hardware/",

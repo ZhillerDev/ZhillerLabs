@@ -9,6 +9,7 @@ import { CircuitMenu } from "./menu/circuit-menu";
 import { LinuxMenu } from "./menu/linux-menu";
 import { TDetailMenu } from "./menu/td/t-detail-menu";
 import { TFrameworkMenu } from "./menu/td/t-framework-menu";
+import { RTOSMenu } from "./menu/hw/rtos-menu";
 
 import mathjax3 from "markdown-it-mathjax3";
 import { CSMenu } from "./menu/cs-menu";
@@ -152,6 +153,7 @@ export default {
 			"/hardware/c51/": C51Menu,
 			"/hardware/stm32/": STM32Menu,
 			"/hardware/esp32/": ESP32Menu,
+			"/hardware/rtos/": RTOSMenu,
 			"/linux/": LinuxMenu,
 			"/testdev/note/": TDetailMenu,
 			"/testdev/framework/": TFrameworkMenu,
