@@ -89,8 +89,16 @@ export const MainNav = [
 		text: "其他技术",
 		items: [
 			{
+				text: "常用网站",
+				link: "/other/useful-websites",
+			},
+			{
 				text: "GODOT",
 				link: "/other/godot/godot-basic",
+			},
+			{
+				text: "计算机维修",
+				link: "/other/repair/computer-config",
 			},
 		],
 		activeMatch: "/other/",
