@@ -7,6 +7,7 @@ export const LinuxMenu = [
 			{ text: "Linux是怎样工作的", link: "/linux/book/linuxwork" },
 			{ text: "Linux内核分析与实现", link: "/linux/book/linuxcore" },
 			{ text: "Vim快速上手", link: "/linux/book/vim" },
+			{ text: "跟老男孩学Shell", link: "/linux/book/oldboy-shell" },
 		],
 	},
 	{

@@ -63,6 +63,16 @@ export const CPPMenu = [
 		],
 	},
 	{
+		text: "Cpp服务端",
+		collapsed: true,
+		items: [
+			{
+				text: "TCP/IP网络编程",
+				link: "/cpp/server/tcpip",
+			},
+		],
+	},
+	{
 		text: "C面试题",
 		collapsed: true,
 		items: [
