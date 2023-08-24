@@ -46,6 +46,10 @@ export const MainNav = [
 				text: "RTOS",
 				link: "/hardware/rtos/rtosmain",
 			},
+			{
+				text: "ARM",
+				link: "/hardware/arm/cortex-m3",
+			},
 		],
 		activeMatch: "/hardware/",
 	},

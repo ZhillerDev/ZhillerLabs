@@ -8,7 +8,8 @@ export const CircuitMenu = [
 		text: "嵌入式",
 		collapsed: false,
 		items: [
-			{ text: "通用元器件扫盲", link: "/circuit/basic-comp" },
+			{ text: "硬件模块原理图解析手册", link: "/circuit/basic-comp" },
+			{ text: "复杂元器件手册", link: "/circuit/deep-comp" },
 			{ text: "嵌入式C语言自我修养", link: "/circuit/embedc" },
 		],
 	},
