@@ -1,0 +1,131 @@
+## GODOT 常用封装方法
+
+<br>
+
+### 最简启动页
+
+新建一个 UI 节点
+
+随便写一个 label 和 button，button 是用来进入主场景的
+
+点击进入 `项目->项目设置->运行` 在里面找到“主场景”，选择我们的 UI 页面，此时启动游戏就默认进入 UI！
+
+为 UI 根节点添加代码，将按钮点击事件连接到该代码内部，实现点击按钮改变场景以进入游戏主场景
+
+```go
+extends Control
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://scenes/World.tscn")
+```
+
+<br>
+
+### 实例化预制体
+
+`preload` 指定欲实例化的预制体  
+`prefab.instance` 对预制体实例化并得到一个可以插入场景的节点
+
+`get_tree` 获得节点树，得到当前场景后插入节点即可
+
+> 确保在 `_physics_process` 方法中每帧调用检测按键
+
+```go
+var prefab = preload("res://prefabs/Obstacle.tscn")
+
+func spawn_obs():
+	if Input.is_action_pressed("ui_cancel"):
+		var node = prefab.instance()
+		get_tree().current_scene.add_child(node)
+
+func _physics_process(delta):
+	spawn_obs()
+```
+
+<br>
+
+### 基础角色移动
+
+#### 键位设置
+
+点击 `项目->项目设置->键位映射`
+
+添加四个按键 `forward backward left right`  
+分别对应 wsad 四个按键
+
+新添加的自定义按键默认排列在最末尾，需要你自己翻看，下图为配置完毕后的完成图
+
+![](./images/2d/player/p1.png)
+
+<br>
+
+#### 场景配置
+
+一个 kinematicbody2d 作为 player 根节点，sprite 精灵图，还有简单的方形碰撞箱
+
+![](./images/2d/player/p2.png)
+
+<br>
+
+#### 代码
+
+原理：通过配置一个单位向量，根据玩家按下的按钮决定向量所指向的方向，然后调用 `move_and_slide` 内置方法使玩家往对应方向以指定速度进行移动
+
+这是在 godot 中二维世界的坐标系：
+
+![](./images/2d/player/p3.png)
+
+为 player 根节点添加代码
+
+```go
+extends KinematicBody2D
+
+# 暴露速度供外部配置
+# dir作为单位向量指示玩家的移动方向
+export var speed = 300
+var dir = Vector2.ZERO
+
+# _physics_process方法保证每一帧在不同的机器上运行都是一致的
+func _physics_process(delta):
+    # 保证每一帧开始的单位向量均为零向量
+	dir = Vector2.ZERO
+    # 按键映射对应的方向
+	if Input.is_action_pressed("forward"):
+		dir.y = -1
+	if Input.is_action_pressed("backward"):
+		dir.y = 1
+	if Input.is_action_pressed("left"):
+		dir.x = -1
+	if Input.is_action_pressed("right"):
+		dir.x = 1
+
+    # 变为标量，然后再使用该标量去移动物体
+	dir = dir.normalized()
+    # 指定方向以指定speed移动玩家
+	move_and_slide(dir*speed)
+```
+
+<br>
+
+### 取随机数
+
+下方代码展示了点击按键后，在随机的 XY 坐标位置生成一个预制体
+
+```go
+var prefab = preload("res://prefabs/Obstacle.tscn")
+
+# 实例化取随机数生成器
+var random = RandomNumberGenerator.new()
+
+func spawn_obs():
+	if Input.is_action_pressed("ui_cancel"):
+		var node = prefab.instance()
+
+        # 在给定的范围内取整数随机数
+		node.position.x = random.randi_range(100,300)
+		node.position.y = random.randi_range(100,300)
+
+		get_tree().current_scene.add_child(node)
+```
+
+<br>
