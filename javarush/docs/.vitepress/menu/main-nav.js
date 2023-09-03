@@ -21,8 +21,8 @@ export const MainNav = [
 		text: "SSM",
 		items: [
 			{
-				text: "Spring内核",
-				link: "/ssm/spring/sp1",
+				text: "Spring",
+				link: "/ssm/spring/s1",
 			},
 		],
 		activeMatch: "/ssm/",
@@ -32,7 +32,7 @@ export const MainNav = [
 		items: [
 			{
 				text: "MySQL",
-				link: "/sql/mysql/m1",
+				link: "/sql/mysql/jdbc",
 			},
 			{
 				text: "Redis",

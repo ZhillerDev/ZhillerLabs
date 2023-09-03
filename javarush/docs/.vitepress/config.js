@@ -3,6 +3,8 @@ import { defineConfig } from "vitepress";
 import { MainNav } from "./menu/main-nav";
 import mathjax3 from "markdown-it-mathjax3";
 import { JavaMenu } from "./menu/java-menu";
+import { SSMMenu } from "./menu/ssm-menu";
+import { SQLMenu } from "./menu/sql-menu";
 
 const customElements = [
 	"math",
@@ -139,6 +141,8 @@ export default {
 		// 侧边栏抽离
 		sidebar: {
 			"/java/": JavaMenu,
+			"/ssm/": SSMMenu,
+			"/sql/": SQLMenu,
 		},
 	},
 	cleanUrls: true,
