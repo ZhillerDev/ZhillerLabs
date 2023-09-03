@@ -8,8 +8,6 @@
 找到：生命周期->package  
 此时双击 package 即可立即开始打包！
 
-![](../img/springboot/sp-build/spb01.png)
-
 <br>
 
 第三步：在项目文件夹的 `target` 文件夹下，找到我们打包好的 `jar` 包，取出来  

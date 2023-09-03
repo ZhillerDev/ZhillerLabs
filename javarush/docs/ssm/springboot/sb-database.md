@@ -2,8 +2,6 @@
 
 #### 整体业务结构
 
-![](../img/springboot/sp-database/spdb001.png)
-
 <br>
 
 #### 代码分析

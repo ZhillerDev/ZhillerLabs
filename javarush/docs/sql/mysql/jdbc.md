@@ -126,15 +126,11 @@ public void jdbc3() throws Exception {
 
 此时打开的网页选择创建隧道，按照下图方式对 3306 端口进行内网穿透
 
-![](../img/sql/cpolar/cq1.png)
-
 <br>
 
 点击一次创建后即可选择“隧道列表”，找到我们刚刚创建的隧道，点击启动；
 
 于“在线隧道列表”内查看当前隧道状态，记下公网地址！
-
-![](../img/sql/cpolar/cq2.png)
 
 <br>
 
@@ -150,8 +146,6 @@ public void jdbc3() throws Exception {
 2. 主机：去掉开头的 `tcp://` 以及结尾的端口号后剩下的内容
 3. 端口：填写公网地址的端口！不是 3306！！！
 4. 账户密码：你安装 mysql 设置的直接写进去就好了
-
-![](../img/sql/cpolar/cq3.png)
 
 <br>
 
