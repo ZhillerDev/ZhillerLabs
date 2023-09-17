@@ -11,8 +11,8 @@ export const MainNav = [
 				link: "/java/basic/j1",
 			},
 			{
-				text: "并发多线程",
-				link: "/java/routine/r1",
+				text: "JVM",
+				link: "/java/jvm/jvm1",
 			},
 		],
 		activeMatch: "/java/",
@@ -40,5 +40,29 @@ export const MainNav = [
 			},
 		],
 		activeMatch: "/sql/",
+	},
+	{
+		text: "微服务",
+		items: [
+			{
+				text: "MySQL",
+				link: "/sql/mysql/jdbc",
+			},
+		],
+		activeMatch: "/ms/",
+	},
+	{
+		text: "项目实战",
+		items: [
+			{
+				text: "黑马点评",
+				link: "/prj/dp/d1",
+			},
+			{
+				text: "牛客论坛",
+				link: "/sql/redis/d1",
+			},
+		],
+		activeMatch: "/prj/",
 	},
 ];

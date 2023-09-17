@@ -5,6 +5,8 @@ import mathjax3 from "markdown-it-mathjax3";
 import { JavaMenu } from "./menu/java-menu";
 import { SSMMenu } from "./menu/ssm-menu";
 import { SQLMenu } from "./menu/sql-menu";
+import { MSMenu } from "./menu/ms-menu";
+import { PrjMenu } from "./menu/prj-menu";
 
 const customElements = [
 	"math",
@@ -143,6 +145,8 @@ export default {
 			"/java/": JavaMenu,
 			"/ssm/": SSMMenu,
 			"/sql/": SQLMenu,
+			"/ms/": MSMenu,
+			"/prj/": PrjMenu,
 		},
 	},
 	cleanUrls: true,
