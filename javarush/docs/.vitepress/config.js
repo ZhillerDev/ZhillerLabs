@@ -123,12 +123,12 @@ export default {
 		lastUpdated: true,
 		nav: MainNav, // 导航抽离
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/zhiyiyi" },
+			{ icon: "github", link: "https://github.com/ZhillerDev" },
 			{ icon: "discord", link: "https://discord.gg/Qs4Mtr23QG" },
 		],
 		footer: {
 			message: "Released under the undefined License.",
-			copyright: "Copyright © 2023-present Zhiller",
+			copyright: "Copyright © 2024-present Zhiller",
 		},
 		algolia: {
 			appId: "R2IYF7ETH7",
@@ -146,7 +146,7 @@ export default {
 			"/ssm/": SSMMenu,
 			"/sql/": SQLMenu,
 			"/ms/": MSMenu,
-			"/prj/": PrjMenu,
+			// "/prj/": PrjMenu,
 		},
 	},
 	cleanUrls: true,
