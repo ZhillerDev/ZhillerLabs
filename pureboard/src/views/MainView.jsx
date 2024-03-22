@@ -8,7 +8,7 @@ const MainView = () => {
 			<p className="mt-2 text-1xl">Free to use</p>
 			<div className="mt-3 p-4 rounded-2xl bg-sky-400 hover:bg-sky-800 transition cursor-pointer w-40">
 				<a
-					href="http://8.130.131.122:30001/s/q3F1"
+					href="https://zhiyiyi.lanzoul.com/ieb9R1s6k9vg"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
